@@ -96,6 +96,7 @@ header {
 .nav2-icons {
   display: flex;
   gap: 40px;
+  display: none;
 }
 
 .nav-btns {
@@ -519,6 +520,10 @@ footer {
 }
 
 @media (max-width: 704px) {
+  .nav2-desc {
+    display: none;
+  }
+
   .nav2 {
     flex-direction: column;
     padding: 20px 0 0;
@@ -530,6 +535,10 @@ footer {
   #hamburger {
     display: block;
   }
+}
+
+.active {
+  display: flex;
 }
 
 @media (max-width: 580px) {

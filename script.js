@@ -2,7 +2,7 @@ window.addEventListener("scroll", function () {
   toggleBacktop();
 });
 
-let backtop = document.getElementById("backtop");
+let backtop = document.querySelector(".backtop");
 
 function toggleBacktop() {
   if (
@@ -14,3 +14,12 @@ function toggleBacktop() {
     backtop.classList.remove("backtop-show");
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("hamburger");
+  const navMenu = document.querySelector(".nav2-desc");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+});
